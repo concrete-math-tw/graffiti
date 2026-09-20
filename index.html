@@ -60,6 +60,8 @@ h2.part .sec{display:block;font-family:var(--sans);font-size:.7rem;font-weight:7
   h2.part.brk{break-before:page}
 }
 .chip.quote{color:var(--lit)} .chip.note{color:var(--nerd)} .chip.joke{color:var(--pun)} .chip.unk{color:var(--meta)}
+.chip.add,.chip.pend,.chip.edit{border-style:dashed;color:var(--muted);font-weight:500}
+.chip.pend{border-style:dotted}
 .joke.plain{background:transparent;border-style:dashed}
 .joke.plain .en{font-size:.93rem;color:var(--ink-2)}
 .joke.plain .why{font-size:.9rem;color:var(--ink-2)}
@@ -72,8 +74,8 @@ dl.gl dt,dl.gl dd{break-inside:avoid}
 <div class="page">
 <header class="masthead"><p class="eyebrow"><a href="../" style="color:inherit;text-decoration:none">← 具體數學・繁體中文伴讀</a>　·　頁邊塗鴉</p>
 <h1>邊注伴讀<small>Graffiti in the Margins, explained</small></h1>
-<p class="lede">《具體數學》頁邊塗鴉的中文評註：全書 557 則頁邊塗鴉，整理成 473 組，依頁碼排列；其中 268 組是笑話或疑似笑話。標 ★ 的 18 則最推薦。</p>
-<div class="legend"><span class="chip pun">雙關 96</span><span class="chip us">美國文化 38</span><span class="chip lit">文學典故 35</span><span class="chip nerd">數學宅梗 24</span><span class="chip meta">自我指涉 21</span><span class="chip joke">其他笑話 31</span><span class="chip stu">學生心聲 128</span><span class="chip quote">名人引言 38</span><span class="chip note">補充說明 94</span><span class="chip unk">笑點未定 5</span></div></header>
+<p class="lede">《具體數學》頁邊塗鴉的中文評註：全書 557 則頁邊塗鴉，外加官方勘誤增補的 10 則，整理成 483 組，依頁碼排列；其中 270 組是笑話或疑似笑話。標 ★ 的 18 則最推薦。</p>
+<div class="legend"><span class="chip pun">雙關 96</span><span class="chip us">美國文化 38</span><span class="chip lit">文學典故 35</span><span class="chip nerd">數學宅梗 24</span><span class="chip meta">自我指涉 21</span><span class="chip joke">其他笑話 33</span><span class="chip stu">學生心聲 129</span><span class="chip quote">名人引言 38</span><span class="chip note">補充說明 101</span><span class="chip unk">笑點未定 5</span></div></header>
 
 <p>《Concrete Mathematics》每一頁的左右頁邊，都印著一行行斜體小字。序言這樣介紹它們：</p>
 <blockquote class="src">“Students always know better than their teachers, so we have asked the first students of this material
@@ -83,13 +85,14 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p>這本書根據史丹佛大學自 1970 年起每年開設的同名課程寫成。頁邊塗鴉的點子，來自史丹佛一本新生手冊《Approaching Stanford》：手冊印著學校的官方說法，頁邊則印畢業學長姐的吐槽。作者照這個做法，請試讀初稿的學生寫下評語——序言特別感謝 Brown、Columbia、CUNY、Princeton、Rice、Stanford 六所大學的學生提供塗鴉並幫忙抓錯。頁邊另有作者挑選的名人引言，以及署名「Your instructor」「Friendly TA」的老師與助教、作者自己的回應。Knuth 在排版期刊 <i>TUGboat</i>（1989）回憶，他們請學生寫下「可以跟正文一起印出來的隨口評論」，稱之為 <b>remarks from the peanut gallery</b>——peanut gallery 原指劇院最便宜的後排座位，那裡的觀眾最愛起鬨，引申為「場邊的閒言閒語」。他們收集了將近 500 則；Knuth 還特地設計了一款 9 點的斜體窄字「Concrete Roman Slanted Condensed」來排這些塗鴉。
 有的是認真的學習心得，有的是名人引言，更多的是<b>坐在最後一排的學生講的冷笑話</b>——連序言替它們分類，
 都分成「正的、負的、零」三種。</p>
-<p>本書替全書頁邊的<b>全部 557 則</b>（序言 25 則、正文到附錄 A 共 532 則）逐則作評註，依章節與頁碼排列。這是一份<b>伴讀</b>材料：原文只引開頭幾個字，方便你在書上找到是哪一則，<b>請翻開原書對照閱讀</b>。同一頁接力的幾則合成一組。每組包含：</p>
+<p>本書替全書頁邊的<b>全部 557 則</b>（序言 25 則、正文到附錄 A 共 532 則）逐則作評註，另收錄官方勘誤後來增補的 <b>10 則</b>，依章節與頁碼排列。這是一份<b>伴讀</b>材料：原文只引開頭幾個字，方便你在書上找到是哪一則，<b>請翻開原書對照閱讀</b>。同一頁接力的幾則合成一組。每組包含：</p>
 <ul class="how">
 <li><b>頁碼與原文開頭</b>——翻到那一頁就能對上；已屬公有領域的古典引言（尤拉、高斯、萊布尼茲、牛頓……）保留全文，外文一律附中譯；</li>
 <li><b>解析</b>——旁邊正文在講什麼、哪個字被拿來玩、背後是哪段文化；</li>
 <li><b>中文說法</b>（有的才附）——換成中文語境大概會怎麼講。</li>
 </ul>
 <p><b>頁碼說明</b>：頁碼一律依原書（第 2 版第 32 刷）的書頁；各刷次的頁碼相同。</p>
+<p><b>各刷次的差異</b>：底本是 1994 年第 1 刷。書後來改版過，Knuth 的勘誤表列出若干<b>新增或修訂的邊注</b>，本集一併收錄，並在該則標上徽章：標「已進書」者，第 27 刷（2013 年 5 月）以後的書上已經印出來；標「尚未進書」者目前只在勘誤表上，你手上的書多半還沒有。另有九頁的引文做過細部校正（書頁 22、48、72、111、168、260、277、297、450），勘誤表沒有列出改了什麼，本集照底本呈現。</p>
 <p><b>文化小辭典</b>：書末附一份依主題整理的辭典（棒球、美國硬幣、廣告、影視、福爾摩斯、拉丁文……），另有一節「英文雙關的五種套路」，把全書笑話歸納成幾種手法。碰到看不懂的背景，可以先翻那裡。</p>
 <p><b>怎麼讀</b>：實線卡片是笑話，虛線素色卡片是名人引言、補充說明與學生的學習筆記。只想看笑話的話，
 略過虛線卡片即可；時間更少，就先看下面的 ★ 精選。雙關語一旦解釋就不好笑了，建議先讀書上的英文、自己想三秒，再看解析。</p>
@@ -402,7 +405,7 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="why">旁邊的研究題在問「非約瑟夫斯子集」的性質（正文只列出 n ≤ 12 的情形）。邊注：「有的，找得到算你厲害。」</p>
 </div>
 <h2 class="part brk"><span class="sec">Sums · 書頁 21–66</span>第 2 章　和式七法</h2>
-<p class="kicker">67 組</p>
+<p class="kicker">68 組</p>
 <div class="joke" id="p-21">
 <div class="jh"><span class="pg">p.21</span><span class="chip pun">雙關</span></div>
 <p class="en">A term is how long this …</p>
@@ -496,6 +499,11 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <div class="jh"><span class="pg">p.30</span><span class="chip stu">學生心聲</span></div>
 <p class="en">This is something like changing variables …</p>
 <p class="why">「這有點像積分換變數，只是更簡單。」</p>
+</div>
+<div class="joke">
+<div class="jh"><span class="pg">p.30</span><span class="chip joke">其他笑話</span><span class="chip add">後來新增 · 已進書</span></div>
+<p class="en">My other math books have different …</p>
+<p class="why">緊鄰 (2.16)。書上把 Σ 的三條基本律叫 distributive／associative／commutative，學生抗議：<b>我另外那幾本數學書，這幾條律的定義跟你不一樣。</b><br>抗議有效：官方勘誤後來把 (2.16) 的 <code>associative law</code> 改名為 <b>pairing law</b>（配對律）——它講的是兩個數列怎麼<b>配對</b>成一項，不是加法的結合順序，原名確實不精確。<br>開頭的 <b>My other …</b> 用的是美國車尾貼紙的老句型「My other car is a Porsche」（我另一台車是保時捷），貼在破車上自嘲。這裡是「我另外那幾本書」。</p>
 </div>
 <div class="joke plain" id="p-31">
 <div class="jh"><span class="pg">p.31</span><span class="chip quote">名人引言</span></div>
@@ -755,7 +763,7 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="zh">「完全冪，完全腐化。」</p>
 </div>
 <h2 class="part brk"><span class="sec">Integer Functions · 書頁 67–101</span>第 3 章　取整之道</h2>
-<p class="kicker">41 組</p>
+<p class="kicker">42 組</p>
 <div class="joke" id="p-67">
 <div class="jh"><span class="pg">p.67</span><span class="chip stu">學生心聲</span></div>
 <p class="en">)Ouch.(</p>
@@ -890,6 +898,11 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="en">The remainder, eh?</p>
 <p class="why">正文在找 mod 的名稱與性質。學生：不就是「餘數」嗎？</p>
 </div>
+<div class="joke plain">
+<div class="jh"><span class="pg">p.83</span><span class="chip note">補充說明</span><span class="chip add">後來新增 · 已進書</span></div>
+<p class="en">Notice that x mumble y = …</p>
+<p class="why">正文用 ceiling 造了一個 mod 的對偶運算，戲稱 <b>mumble</b>（咕噥、含糊帶過）：x mumble y = y⌈x/y⌉ − x，意思是「走了 x 之後還要再走多遠才回到起點」。書上自己也說「總得取個比 mumble 好的名字」。<br>這條後補的邊注一句話戳破：它根本就是 (−x) mod y。一行可驗：(−x) mod y = −x − y⌊−x/y⌋ = −x + y⌈x/y⌉，因為 ⌊−z⌋ = −⌈z⌉。既然舊運算就夠用，新名字也不必取了。</p>
+</div>
 <div class="joke" id="p-85">
 <div class="jh"><span class="pg">p.85</span><span class="chip joke">其他笑話</span></div>
 <p class="en">Some claim that it's too dangerous …</p>
@@ -976,7 +989,7 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="zh">「『譜』料這題很難。」</p>
 </div>
 <h2 class="part brk"><span class="sec">Number Theory · 書頁 102–152</span>第 4 章　整數之網</h2>
-<p class="kicker">41 組</p>
+<p class="kicker">42 組</p>
 <div class="joke" id="p-102">
 <div class="jh"><span class="pg">p.102</span><span class="chip stu">學生心聲</span></div>
 <p class="en">In other words, be prepared to …</p>
@@ -1019,6 +1032,11 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <div class="jh"><span class="pg">p.108</span><span class="chip quote">名人引言</span></div>
 <p class="en">“Οἱ πρῶτοι ἀριθμοὶ πλείους εἰσὶ παντὸς τοῦ προτεθέντος πλήθους πρώτων ἀριθμῶν.” —Euclid [Translation: “There are more primes than in any given set of primes.”]</p>
 <p class="why">（古希臘文）《幾何原本》第九卷命題 20：「質數比任何給定的一組質數都多。」也就是質數有無窮多個。</p>
+</div>
+<div class="joke plain">
+<div class="jh"><span class="pg">p.108</span><span class="chip stu">學生心聲</span><span class="chip pend">勘誤新增 · 尚未進書</span></div>
+<p class="en">Oh, I see: The formula e1e2…en−1 …</p>
+<p class="why">歐幾里得數的遞迴是 e<sub>n</sub> = e<sub>1</sub>e<sub>2</sub>…e<sub>n−1</sub> + 1，書上直接寫 e<sub>1</sub> = 1 + 1 = 2。那 e<sub>1</sub> 前面那一串是什麼？<br>答案：n = 1 時那是<b>空乘積</b>，依慣例等於 1（正如空和等於 0）。學生恍然大悟：「喔，我懂了。」這正是第 2 章一直在講的「讓邊界情形自動正確」。</p>
 </div>
 <div class="joke" id="p-109">
 <div class="jh"><span class="pg">p.109</span><span class="chip us">美國文化</span></div>
@@ -1198,7 +1216,7 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="zh">「單位根——那分裂的根源是什麼？」</p>
 </div>
 <h2 class="part brk"><span class="sec">Binomial Coefficients · 書頁 153–256</span>第 5 章　二項式係數</h2>
-<p class="kicker">76 組</p>
+<p class="kicker">77 組</p>
 <div class="joke plain" id="p-153">
 <div class="jh"><span class="pg">p.153</span><span class="chip stu">學生心聲</span></div>
 <p class="en">Lucky us! <span class="sep">／</span> …</p>
@@ -1391,6 +1409,11 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <div class="jh"><span class="pg">p.201</span><span class="chip note">補充說明</span></div>
 <p class="en">The generalized binomial series 𝓑t(z) was …</p>
 <p class="why">「廣義二項級數 𝓑<sub>t</sub>(z) 是 Lambert 在 1750 年代發現的，幾年後他又注意到它的冪次滿足 (5.60) 的第一式。」</p>
+</div>
+<div class="joke plain">
+<div class="jh"><span class="pg">p.201</span><span class="chip note">補充說明</span><span class="chip pend">勘誤新增 · 尚未進書</span></div>
+<p class="en">News flash: ln 𝓑t(z) = Σk≥1 …</p>
+<p class="why">廣義二項級數 𝓑<sub>t</sub>(z) 與廣義指數級數 𝓔<sub>t</sub>(z) 取對數之後，展開式乾淨得出乎意料。<br><b>News flash</b> 是美國廣播電視插播突發新聞的固定用語（「新聞快報」），書裡拿它標示「成書之後才冒出來的新結果」。</p>
 </div>
 <div class="joke" id="p-202">
 <div class="jh"><span class="pg">p.202</span><span class="chip joke">其他笑話</span></div>
@@ -1595,7 +1618,7 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="why">「這題（以及接下來幾題）最好用電腦代數系統。」</p>
 </div>
 <h2 class="part brk"><span class="sec">Special Numbers · 書頁 257–319</span>第 6 章　特殊數</h2>
-<p class="kicker">33 組</p>
+<p class="kicker">35 組</p>
 <div class="joke plain" id="p-257">
 <div class="jh"><span class="pg">p.257</span><span class="chip quote">名人引言</span></div>
 <p class="en">“... par cette notation, les formules deviennent plus symétriques.” —J. Karamata</p>
@@ -1640,6 +1663,11 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <div class="jh"><span class="pg">p.273</span><span class="chip meta">自我指涉</span></div>
 <p class="en">This must be Table 273.</p>
 <p class="why">呼應第 2 章「Table 55 在第 55 頁」：這張表果然就叫 Table 273，而且就在第 273 頁。</p>
+</div>
+<div class="joke plain">
+<div class="jh"><span class="pg">p.273</span><span class="chip note">補充說明</span><span class="chip pend">勘誤新增 · 尚未進書</span></div>
+<p class="en">(See also J. G. Coffin [62'].)</p>
+<p class="why">正文正在解釋調和數為什麼用 H：波長 1/n 的音，是波長 1 的音的第 n 個<b>泛音</b>（harmonic）。<br>新增的出處是 J. G. Coffin 登在《American Mathematical Monthly》30 (1923) 第 76 頁的 Problem 3009。勘誤表特別加註：<b>從來沒有人登出解答</b>——一道被遺忘一百年的題目。</p>
 </div>
 <div class="joke" id="p-274">
 <div class="jh"><span class="pg">p.274</span><span class="chip pun">雙關</span></div>
@@ -1700,9 +1728,9 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="why">「令 x = tan w，由泰勒定理，tan w 的 n 階導數是 T<sub>n</sub>(tan w)。」</p>
 </div>
 <div class="joke plain" id="p-288">
-<div class="jh"><span class="pg">p.288</span><span class="chip note">補充說明</span></div>
-<p class="en">Johann Faulhaber implicitly used (6.97) in …</p>
-<p class="why">「Faulhaber 在 1635 年就隱含地用了 (6.97)，把 m ≤ 17 的冪和寫成 n(n + 1)/2 的多項式。」</p>
+<div class="jh"><span class="pg">p.288</span><span class="chip note">補充說明</span><span class="chip edit">勘誤修訂 · 已進書</span></div>
+<p class="en">(Johann Faulhaber implicitly used (6.97) in …</p>
+<p class="why">「Faulhaber 在 1631 年就隱含地用了 (6.97)，把 m ≤ 17 的冪和寫成 n(n + 1)/2 的多項式。」<br><b>版本註：</b>年份原印 1635，官方勘誤已更正為 <b>1631</b>（Faulhaber 的《Academia Algebrae》出版於 1631 年），開頭也補上了左括號。</p>
 </div>
 <div class="joke" id="p-291">
 <div class="jh"><span class="pg">p.291</span><span class="chip pun">雙關</span><span class="chip stu">學生心聲</span></div>
@@ -1719,6 +1747,11 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <div class="jh"><span class="pg">p.293</span><span class="chip stu">學生心聲</span></div>
 <p class="en">The paradox is explained because ... …</p>
 <p class="why">正文把 8×8 = 64 格的正方形剪成四塊，拼成 5×13 = 65 格的長方形，憑空多出一格。學生：這個悖論的解釋是……魔術本來就不該被拆穿。</p>
+</div>
+<div class="joke plain" id="p-295">
+<div class="jh"><span class="pg">p.295</span><span class="chip note">補充說明</span><span class="chip add">後來新增 · 已進書</span></div>
+<p class="en">[The anonymous author of a classic …</p>
+<p class="why">(6.113) 是 <b>Zeckendorf 定理</b>：每個正整數都能唯一寫成若干個<b>不相鄰</b>費氏數之和。書上把它歸給 Zeckendorf（1972 年發表）。<br>這條後補的邊注把功勞往前推了六百多年：梵文韻律學古籍《Prākṛta Paiṅgala》（約 1320 年）的無名作者早就知道這種表示法。印度韻律學計算長短音節的排列數，正是費氏數最早出現的地方，比 Fibonacci 的 1202 年還早。</p>
 </div>
 <div class="joke plain" id="p-297">
 <div class="jh"><span class="pg">p.297</span><span class="chip quote">名人引言</span></div>
@@ -2199,9 +2232,9 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="why">正文說：前面的 hierarchy（層級）處理趨於無窮的函數，現在要為趨於 0 的函數建立類似的層級。學生把 <b>hi</b>-erarchy 當成 high，趨於零的那一套就該叫 <b>lo</b>-erarchy。</p>
 </div>
 <div class="joke plain" id="p-443">
-<div class="jh"><span class="pg">p.443</span><span class="chip quote">名人引言</span></div>
-<p class="en">“... wir durch das Zeichen O(n) eine Größe ausdrücken, deren Ordnung in Bezug auf n die Ordnung von n nicht überschreitet; ob sie wirklich Glieder von der Ordnung n in sich enthält, bleibt bei dem bisherigen Schlußverfahren dahingestellt.” —P. Bachmann</p>
-<p class="why">（德文）「……我們用記號 O(n) 表示一個量，它相對於 n 的階不超過 n 的階；至於它是否真的含有 n 階的項，依目前的推論方式暫不論定。」Bachmann 在 1894 年首創大 O 記號的原文。</p>
+<div class="jh"><span class="pg">p.443</span><span class="chip quote">名人引言</span><span class="chip edit">勘誤修訂 · 已進書</span></div>
+<p class="en">“..., wenn wir durch das Zeichen O(n) eine Grösse ausdrücken, deren Ordnung in Bezug auf n die Ordnung von n nicht überschreitet; ob sie wirklich Glieder von der Ordnung n in sich enthält, bleibt bei dem bisherigen Schlussverfahren dahingestellt.” —P. Bachmann</p>
+<p class="why">（德文）「……<b>如果</b>我們用記號 O(n) 表示一個量，它相對於 n 的階不超過 n 的階；至於它是否真的含有 n 階的項，依目前的推論方式暫不論定。」Bachmann 在 1894 年首創大 O 記號的原文。<br><b>版本註：</b>官方勘誤把開頭補成 “, wenn wir”（原本漏了 wenn，少一個「如果」），並依 Bachmann 原書把兩處 ß 還原成 ss。</p>
 </div>
 <div class="joke" id="p-444">
 <div class="jh"><span class="pg">p.444</span><span class="chip lit">文學典故</span></div>
@@ -2215,10 +2248,10 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="zh">「不是沒意義，只是沒有『點』。」</p>
 </div>
 <div class="joke top" id="p-445">
-<div class="jh"><span class="pg">p.445</span><span class="chip lit">文學典故</span><span class="chip nerd">數學宅梗</span><span class="star">★ 精選</span></div>
+<div class="jh"><span class="pg">p.445</span><span class="chip lit">文學典故</span><span class="chip nerd">數學宅梗</span><span class="star">★ 精選</span><span class="chip edit">勘誤補署名 · 已進書</span></div>
 <p class="en">You are the fairest of your …</p>
 <p class="why">數學宅情詩：「我愛你，就像 1/x——當 x 趨近於零時。」也就是愛到無限大。最後補一個 <b>Positively</b>：當然是從正的那邊趨近，否則會變成負無限大。開頭 <b>the fairest of your sex</b>（女子中最美者）是舊式情詩的腔調，刻意文縐縐，更顯得後半的數學突兀好笑。Positively 在口語裡還有「絕對、千真萬確」的意思，一字兩義。</p>
-<p class="zh">「我對妳的愛，就像 x 趨近零時的 1/x。（從正的那邊。）」</p>
+<p class="zh">「我對妳的愛，就像 x 趨近零時的 1/x。（從正的那邊。）」<br><b>版本註：</b>官方勘誤後來補上作者署名 <b>Michael Stueben</b>——美國高中數學老師，著有蒐集數學幽默的《Twenty Years Before the Blackboard》（MAA，1998）。</p>
 </div>
 <div class="joke" id="p-446–447">
 <div class="jh"><span class="pg">p.446–447</span><span class="chip lit">文學典故</span></div>
@@ -2299,9 +2332,9 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="zh">「馬快開飯時也會『甩尾』。」</p>
 </div>
 <div class="joke" id="p-469">
-<div class="jh"><span class="pg">p.469</span><span class="chip stu">學生心聲</span></div>
+<div class="jh"><span class="pg">p.469</span><span class="chip stu">學生心聲</span><span class="chip pend">勘誤補署名 · 尚未進書</span></div>
 <p class="en">“We may not be big, but …</p>
-<p class="why">正文說誤差項「minuscule」（極小），被更大的 O(n<sup>−3</sup>) 蓋過。學生替誤差項寫了一句像廣告詞的自我介紹：我們或許不大，但我們很小——在漸近分析裡，小才是美德。</p>
+<p class="why">正文說誤差項「minuscule」（極小），被更大的 O(n<sup>−3</sup>) 蓋過。這句像廣告詞的自我介紹——我們或許不大，但我們很小——在漸近分析裡正是美德。<br><b>出處：</b>官方勘誤補上署名 <b>Stuart McLean</b>（1948–2017），加拿大 CBC 廣播名主持人，節目《The Vinyl Cafe》（1994–2015）講一間二手唱片行的故事，收銀台旁就掛著這句店訓。這是加拿大人一聽就會笑的梗，台灣讀者大概只能從字面上的自相矛盾感受——「我們也許不大，但我們很小」等於什麼都沒說，卻剛好是小店（和誤差項）最得意的地方。</p>
 </div>
 <div class="joke" id="p-470">
 <div class="jh"><span class="pg">p.470</span><span class="chip lit">文學典故</span></div>
@@ -2345,7 +2378,7 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="zh">「就……就……就是這樣啦，各位！」</p>
 </div>
 <h2 class="part brk"><span class="sec">Answers to Exercises · 書頁 497–603</span>附錄 A　習題解答</h2>
-<p class="kicker">52 組</p>
+<p class="kicker">56 組</p>
 <div class="joke top" id="p-497">
 <div class="jh"><span class="pg">p.497</span><span class="chip meta">自我指涉</span><span class="star">★ 精選</span></div>
 <p class="en">(The first finder of every error …</p>
@@ -2445,6 +2478,16 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="en">“No square less than 25 × …</p>
 <p class="why">「沒有小於 25 × 10<sup>14</sup> 的平方數能整除歐幾里得數（前幾個質數之積加 1）。」</p>
 </div>
+<div class="joke plain">
+<div class="jh"><span class="pg">p.525</span><span class="chip note">補充說明</span><span class="chip pend">勘誤新增 · 尚未進書</span></div>
+<p class="en">First solved by K. Matomäki, “Prime-representing …</p>
+<p class="why">習題 4.68 是書末的<b>研究問題</b>（成書時無人能解）：是否存在常數 Q，使得 ⌊Q<sup>2<sup>n</sup></sup>⌋ 對所有 n ≥ 0 都是質數？<br>勘誤補記：這題由芬蘭數論學家 Kaisa Matomäki 在 2010 年首次解決。書末的研究問題一題一題被攻下，是這本書最好玩的地方之一。</p>
+</div>
+<div class="joke plain">
+<div class="jh"><span class="pg">p.525</span><span class="chip note">補充說明</span><span class="chip pend">勘誤新增 · 尚未進書</span></div>
+<p class="en">Late-breaking news: The $10,000 prize has …</p>
+<p class="why">解答 4.69 提到：Erdős 懸賞 <b>一萬美元</b>，徵求「質數間隙能比 Rankin 的下界再大任意倍」的證明——這是他一生開出的最高獎金。<br>2014 年被兩組人同時攻下：Ford–Green–Konyagin–Tao，以及獨立作業的 Maynard；五人合寫的論文 2018 年登在 JAMS。<br><b>Late-breaking news</b> 是美國新聞用語，指節目都快結束了才插播進來的最新消息。</p>
+</div>
 <div class="joke" id="p-526">
 <div class="jh"><span class="pg">p.526</span><span class="chip nerd">數學宅梗</span></div>
 <p class="en">What's 114 in radix 11?</p>
@@ -2497,10 +2540,20 @@ in the back row; some are positive, some are negative, some are zero.”</blockq
 <p class="why">解答 6.6（兔子問題）：費氏遞迴是「加法」的，但兔子在「繁殖」——<b>multiply</b> 是「乘法」也是「繁殖」。</p>
 <p class="zh">「費氏遞迴是加法，兔子卻在做乘法。」</p>
 </div>
+<div class="joke plain">
+<div class="jh"><span class="pg">p.549</span><span class="chip note">補充說明</span><span class="chip pend">勘誤新增 · 尚未進書</span></div>
+<p class="en">Late-breaking news: W. Zudilin has found …</p>
+<p class="why">解答 5.114 列出幾個當時還沒有明確表達式的係數 c<sub>n</sub><sup>(m)</sup>。Zudilin 在 2004 年把每一個都寫成了二項式係數的和。又一則「快報」。</p>
+</div>
 <div class="joke plain" id="p-550">
 <div class="jh"><span class="pg">p.550</span><span class="chip note">補充說明</span></div>
 <p class="en">That “true value” is the length …</p>
 <p class="why">「那個『真值』是 65 國際英里；國際英里只有美國法定英里的 0.999998 倍。3937 美國英里恰好等於 6336 公里，而費氏換算法會算成 6370。」英制單位的冷知識。</p>
+</div>
+<div class="joke" id="p-551">
+<div class="jh"><span class="pg">p.551</span><span class="chip joke">其他笑話</span><span class="chip add">後來新增 · 已進書</span></div>
+<p class="en">(Of course Euler knew the Genocchi …</p>
+<p class="why">解答 6.24 最後定義了 <b>Genocchi 數</b>⟨1, 1, 3, 17, 155, 2073, …⟩，說是「以 Genocchi 命名」。<br>這條邊注吐槽：Euler（1707–1783）早就知道這些數，而 Genocchi（1817–1889）當時還沒出生——出處就在 Euler《微分學原理》第二卷第七章第 181 節。<br>數學裡「以某人命名的東西，往往不是那個人先發現的」有個名字，叫 <b>Stigler 名稱法則</b>（Stigler's law of eponymy）；而這條法則本身也不是 Stigler 先講的——他把功勞歸給社會學家 Merton。</p>
 </div>
 <div class="joke plain" id="p-552">
 <div class="jh"><span class="pg">p.552</span><span class="chip note">補充說明</span></div>
